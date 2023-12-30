@@ -10,23 +10,22 @@ const Posts = ({author, publishedAt, content}) => { /*props vieram da criação 
 
 /* INCLUSAO DE DATA*/
 const publishedDateFormated = format(publishedAt, "d 'de' LLLL 'ás' HH:mm'h'", {locale: ptBR});
+
 const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {locale: ptBR, addSuffix: true});
 
 /*INSERINDO COMENTÁRIOS ATRAVÉS DO BOTÃO SUBMIT*/
-const [comments, setComment] = useState(['Legal!']);
+const [comments, setComment] = useState(['legal']);
 
-/*CAPTURANDO E INCLUINDO O TEXTO DIGITADO DO COMENTÁRIO*/
-const [newCommentText, setNewCommentText] = useState('');
-
-function handleCreateNewComment(e) {
-    e.preventDefault();    
+function handleCreateNewComment() {
+    event.preventDefault();
     setComment([...comments, newCommentText]);
-    setNewCommentText('');
 }
 
 /*CAPTURANDO E INCLUINDO O TEXTO DIGITADO DO COMENTÁRIO*/
-function handleNewCommentChange(e) {
-    setNewCommentText(e.target.value);
+const [newCommentText, setNewCommentText] = ('');
+
+function handleNewCommentText() {
+    console.log(event.target.value);
 }
 
 
@@ -60,7 +59,7 @@ function handleNewCommentChange(e) {
         <form onSubmit={handleCreateNewComment} className= {PostStyle.commentForm}>
             <strong>Deixe seu comentário</strong>
 
-            <textarea onChange={handleNewCommentChange} value={newCommentText} placeholder='Deixe um comentário'></textarea>
+            <textarea onChange={handleNewCommentText} placeholder='Deixe um comentário'></textarea>
 
             <footer>
                 <button type='submit'>Comentar</button>

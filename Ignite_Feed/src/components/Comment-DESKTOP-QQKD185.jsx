@@ -2,7 +2,7 @@ import Avatar from './Avatar'
 import CommentStyle from './Comment.module.css'
 import { ThumbsUp, Trash } from 'phosphor-react'
 
-const Comment = ({content}) => {
+const Comment = ({ content }) => {
   return (
     <div className= {CommentStyle.comment}>
       <Avatar border={false} src="https://avatars.githubusercontent.com/u/104041138?v=4" alt="" />

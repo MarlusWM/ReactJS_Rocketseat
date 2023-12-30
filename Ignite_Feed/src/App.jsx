@@ -17,7 +17,7 @@ function App() {
         role: 'Web Developer'
       },
       content: [
-        { type: 'paragrah', content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In saepe illo ipsa quasi tempore repellat, minus dolores eos nobis dolorem. Dolores beatae molestias cupiditate, perferendis dignissimos nobis explicabo odio nemo.'},
+        { type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In saepe illo ipsa quasi tempore repellat, minus dolores eos nobis dolorem. Dolores beatae molestias cupiditate, perferendis dignissimos nobis explicabo odio nemo.'},
 
         { type: 'link', content: '#webdev'}
       ],
