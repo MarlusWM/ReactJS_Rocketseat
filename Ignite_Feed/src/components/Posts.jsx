@@ -6,7 +6,7 @@ import ptBR from 'date-fns/locale/pt-BR'
 import { useState } from 'react'
 
 
-const Posts = ({author, publishedAt, content}) => { /*props vieram da criação do objeto posts no app.jsx usando a desestruturação, pegando apenas as props desejadas*/
+const Posts = ({ author, publishedAt, content }) => { /*props vieram da criação do objeto posts no app.jsx usando a desestruturação, pegando apenas as props desejadas*/
 
 /* INCLUSAO DE DATA*/
 const publishedDateFormated = format(publishedAt, "d 'de' LLLL 'ás' HH:mm'h'", {locale: ptBR});
@@ -50,9 +50,9 @@ function handleNewCommentChange(e) {
         <div className={PostStyle.content}>
             {content.map(line => {
                 if (line.type == 'paragraph') {
-                    return <p>{line.content}</p>;
+                    return <p key={line.content}>{line.content}</p>;
                 }else if (line.type == 'link') {
-                    return <p><a href="#">{line.content}</a></p>;
+                    return <p key={line.content}><a href="#">{line.content}</a></p>;
                 }
             })}
         </div>
@@ -69,7 +69,7 @@ function handleNewCommentChange(e) {
 
         <div className={PostStyle.commentList}>
             {comments.map(comment => {
-                return <Comment content={comment}/>
+                return <Comment key={comment} content={comment}/>
             })}
         </div>
         
