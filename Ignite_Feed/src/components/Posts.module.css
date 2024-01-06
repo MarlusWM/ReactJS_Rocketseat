@@ -93,12 +93,15 @@
     color: var(--white);
     font-weight: bold;
     cursor: pointer;
-
 }
 
-.commentForm > footer > button:hover {
+.commentForm > footer > button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.commentForm > footer > button:not(:disable):hover {
     background: var(--green-300);
-    
     transition: 0.1s;
 }
 

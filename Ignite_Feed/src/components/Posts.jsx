@@ -27,8 +27,25 @@ function handleCreateNewComment(e) {
 /*CAPTURANDO E INCLUINDO O TEXTO DIGITADO DO COMENTÁRIO*/
 function handleNewCommentChange(e) {
     setNewCommentText(e.target.value);
+    e.target.setCustomValidity('');
 }
 
+/*FUNÇÃO COMO PROPS PARA COMUNICAÇÃO ENTRE COMPONENTES (FUNCAO DELETAR)*/
+function deleteComment(commentToDelete) {
+    /*imutabilidade, devo criar uma nova variável para deletar e ela irá gerar uma nova lista*/
+    const commentWithoutDeleteOne = comments.filter(comment => {
+        return comment !== commentToDelete;
+    });
+    setComment(commentWithoutDeleteOne);
+}
+
+/*FUNÇÃO PARA CLIENTE PREENCHER O CAMPO DE TEXTO PARA COMENTAR*/
+function handleNewCommentInvalid(e) {
+    e.target.setCustomValidity('Esse campo é obrigatório!');
+}
+
+/*VARIÁVEL PARA CONDICIONAR O BOTÃO SUBMIT SEM TEXTO*/
+const isNewCommentEmpty = newCommentText.length === 0;
 
   return (
     <article className= {PostStyle.post}>
@@ -60,16 +77,24 @@ function handleNewCommentChange(e) {
         <form onSubmit={handleCreateNewComment} className= {PostStyle.commentForm}>
             <strong>Deixe seu comentário</strong>
 
-            <textarea onChange={handleNewCommentChange} value={newCommentText} placeholder='Deixe um comentário'></textarea>
+            <textarea 
+            onChange={handleNewCommentChange} 
+            value={newCommentText} 
+            placeholder='Deixe um comentário'
+            required
+            onInvalid={handleNewCommentInvalid}
+            ></textarea>
 
             <footer>
-                <button type='submit'>Comentar</button>
+                <button type='submit' 
+                disabled={isNewCommentEmpty}
+                >Comentar</button>
             </footer>
         </form>
 
         <div className={PostStyle.commentList}>
             {comments.map(comment => {
-                return <Comment key={comment} content={comment}/>
+                return <Comment key={comment} content={comment} onDeleteComment={deleteComment} />
             })}
         </div>
         
