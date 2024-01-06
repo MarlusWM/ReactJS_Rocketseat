@@ -1,0 +1,81 @@
+.comment {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.commentBox {
+    flex: 1; /*para a div esticar o máximo possível para ocupar o espaço, já que colocamos display flex para ficar em linha*/
+}
+
+.commentContent {
+    background: var(--gray-700);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.commentContent > header { /*como é um nó pai, já alinha os nós abaixo e o between faz com que */
+    display: flex;
+    align-items: flex-start; /*faz com que o conteúdo do header comece em cima, antes estava center e os objetos estavam centralizados*/
+    justify-content: space-between;
+}
+
+.authorAndTime > strong {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.authorAndTime > time {
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: var(--gray-400);
+}
+
+.commentContent > header > button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-400);
+    cursor: pointer;
+
+    line-height: 0; /*botão não segue a centralização quando da o focus nele, ficando marcado e o ícone dentro descentralizado, dessa forma, fica justo com o desenho*/
+    border-radius: 2px;
+}
+
+.commentContent > header > button:hover {
+    color: var(--red-500);
+}
+
+.commentContent > p {
+    margin-top: 1rem;
+    color: var(--gray-300);
+}
+
+.commentBox > footer {
+    margin-top: 1rem;
+}
+
+.commentBox > footer > button {
+    background: transparent;
+    border: 0;
+    border-radius: 2px;
+    color: var(--gray-400);
+    cursor: pointer;
+
+    display: flex; /*ícone, texto e span na mesma linha horizontal*/
+    align-items: center;
+}
+
+.commentBox > footer > button:hover{
+    color: var(--gray-300);
+}
+
+.commentBox > footer > button > svg { /*estiliza diretamente o ícone de arquivo svg, quando precisa apenas estilizar o svg*/
+    margin-right: 0.5rem;
+}
+
+.commentBox > footer > button > span::before { /*funciona como 'criando um elemento dentro do span*/
+    padding: 0 0.25rem;
+    content: '\2022'; /*foi pesquisado no google o código do símbolo*/
+}

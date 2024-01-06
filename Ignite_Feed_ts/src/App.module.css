@@ -1,0 +1,21 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr; /*fr unidade usada no grid pra informar que tem um tamanho flexível*/
+    gap: 2rem;
+    align-items: flex-start; /*sempre ficar alinhado no topo, fazendo que o aside fique menor e não esticado acompanhando o posts*/
+}
+
+/* RESPONSIVIDADE */
+/*condicional, se a tela for menor que 768 então aplique no grupo wrapper apenas uma coluna*/
+@media (max-width: 768px) { 
+    html {
+        font-size: 87.5%;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+} /* como estamos com a unidade de medida rem, conforme o usuário aumenta ou diminui a fonte, os elementos respondem da mesma forma, assim, se condicionar o html a uma fonte menor para responsividade, tudo vai ficar mais harmônico (regra de 3, 16=100 então 14 da 87.5%)*/
