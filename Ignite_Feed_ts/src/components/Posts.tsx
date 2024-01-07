@@ -19,17 +19,21 @@ interface Content {
     content: string,
 }
 
-interface PostProps {
+export interface PostType {
+    id: 1,
     author: Author,
     publishedAt: Date,
     content: Content[],
 }
+interface PostProps {
+    post: PostType,
+}
 
-const Posts = ({ author, publishedAt, content }: PostProps) => { /*props vieram da criação do objeto posts no app.jsx usando a desestruturação, pegando apenas as props desejadas*/
+const Posts = ({ post }: PostProps) => { /*props vieram da criação do objeto posts no app.jsx usando a desestruturação, pegando apenas as props desejadas*/
 
 /* INCLUSAO DE DATA*/
-const publishedDateFormated = format(publishedAt, "d 'de' LLLL 'ás' HH:mm'h'", {locale: ptBR});
-const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {locale: ptBR, addSuffix: true});
+const publishedDateFormated = format(post.publishedAt, "d 'de' LLLL 'ás' HH:mm'h'", {locale: ptBR});
+const publishedDateRelativeToNow = formatDistanceToNow(post.publishedAt, {locale: ptBR, addSuffix: true});
 
 /*INSERINDO COMENTÁRIOS ATRAVÉS DO BOTÃO SUBMIT*/
 const [comments, setComment] = useState(['Legal!']);
@@ -71,11 +75,11 @@ const isNewCommentEmpty = newCommentText.length === 0;
         <header>
 
             <div className= {PostStyle.author}>
-                <Avatar border src={author.avatarUrl} />
+                <Avatar border src={post.author.avatarUrl} />
             
                 <div className={PostStyle.authorInfo}>
-                    <strong>{author.name}</strong>
-                    <span>{author.role}</span>
+                    <strong>{post.author.name}</strong>
+                    <span>{post.author.role}</span>
                 </div>
             </div>
 
@@ -84,7 +88,7 @@ const isNewCommentEmpty = newCommentText.length === 0;
         </header>
 
         <div className={PostStyle.content}>
-            {content.map(line => {
+            {post.content.map(line => {
                 if (line.type == 'paragraph') {
                     return <p key={line.content}>{line.content}</p>;
                 }else if (line.type == 'link') {

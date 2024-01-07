@@ -38,7 +38,7 @@ function handleLikeComment(state) {
           <header>
             <div className={CommentStyle.authorAndTime}>
               <strong>Marlus Weber</strong>
-              <time dateTime='2023-12-22 09:22' title='22 de Dezembro de 2023'>Aprox. 2h</time>
+              <time dateTime='2023-12-22 09:22' title='22 de Dezembro de 2023'>Aprox 2h</time>
             </div>
             <button onClick={handleDeleteComment} title='Excluir'>
               <Trash size={24}/>

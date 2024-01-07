@@ -3,12 +3,13 @@ import './global.css'
 import AppStyle from './App.module.css'
 import Sidebar from "./components/Sidebar"
 import Posts from "./components/Posts"
+import { PostType } from "./components/Posts"
 
 
 function App() {
 
   /*vamos colocar as informações do posts.jsx não estáticos*/
-  const posts = [
+  const posts: PostType[] = [
     {
       id: 1,
       author:{
@@ -18,7 +19,6 @@ function App() {
       },
       content: [
         { type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In saepe illo ipsa quasi tempore repellat, minus dolores eos nobis dolorem. Dolores beatae molestias cupiditate, perferendis dignissimos nobis explicabo odio nemo.'},
-
         { type: 'link', content: '#webdev'}
       ],
       publishedAt: new Date(),
@@ -41,9 +41,7 @@ function App() {
         return (
         <Posts 
         key={post.id}
-        author= {post.author}
-        content= {post.content}
-        publishedAt= {post.publishedAt}
+        post={post}
         />
         
         )
