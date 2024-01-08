@@ -1,0 +1,38 @@
+.inputBox {
+    display: flex;
+    width: 40rem;
+    height: auto;
+    margin: auto;
+}
+
+
+.inputText {
+    /*layout*/
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+    border: 0.5rem;
+
+
+    /*style*/
+    border-radius: 8px;
+    border: 1px solid var(--Gray-700);
+    background: var(--Gray-500);
+}
+
+.btnAdd {
+    /*layput*/
+    display: flex;
+    padding: 1rem;
+    border: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    /*style*/
+    border-radius: 8px;
+    background: var(--Blue-Dark);
+    color: white;
+}

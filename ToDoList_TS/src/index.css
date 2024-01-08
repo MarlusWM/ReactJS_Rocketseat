@@ -1,0 +1,23 @@
+:root {
+  --PurpleDark: #5E60CE;
+  --Blue: #4EA8DE;
+  --Gray-600: #1A1A1A;
+  --Gray-700: #0D0D0D;
+  --Gray-500: #262626;
+  --Blue-Dark: #1E6F9F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Gray-600);
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}

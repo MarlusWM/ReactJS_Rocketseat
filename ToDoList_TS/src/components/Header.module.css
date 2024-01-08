@@ -1,0 +1,31 @@
+.header {
+    height: 200px;
+    flex-shrink: 0;
+    background: var(--Gray-700);
+    padding: 4.5rem;
+    
+    /*tipografia*/
+    color: var(--Blue);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .header > img {
+    width: 22px;
+    height: 36px;
+    flex-shrink: 0;
+    margin-right: 1rem;
+  }
+
+  .do {
+    color: var(--PurpleDark);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
