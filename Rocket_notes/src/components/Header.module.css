@@ -1,0 +1,36 @@
+
+.notePreview{
+    height: 6.56rem;
+    width: 100%;
+    border-bottom-width: 1px solid var(--background-700);
+    display: flex;
+    padding: 2rem;
+    
+    display: flex;
+    align-items: center;
+}
+
+
+
+.notePreview > img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    line-height: 2rem;
+}
+
+.welcome > span {
+    font-size: 1rem;
+    color: var(--gray_100);
+}
+
+.logout {
+    padding: 2rem;
+    color: var(--orange);
+}
