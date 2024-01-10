@@ -1,11 +1,19 @@
 import InputListStyle from "./InputList.module.css"
 import PlusIcon from "../assets/plusIcon.svg"
+import { useState } from "react"
 
 const InputList = () => {
+
+  
+  const [inputText, setInputText] = useState('');
+
   return (
     <>
         <div className={InputListStyle.inputBox}>
-            <input className={InputListStyle.inputText} 
+            <input className={InputListStyle.inputText}
+            value={inputText}
+            onChange={(e) => 
+              setInputText(e.target.value)}
             type="text" 
             name="listText" 
             id="" 
