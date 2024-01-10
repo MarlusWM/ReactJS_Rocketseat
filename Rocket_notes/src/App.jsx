@@ -12,8 +12,12 @@ function App() {
         <UseLink
         title={"Links Úteis"}/>
         <ul>
-          <li>link1</li>
-          <li>link2</li>
+          <li>
+            <a href="#">Link 1</a>
+          </li>
+          <li>
+          <a href="#">Link 2</a>
+          </li>
         </ul>
       </div>
     </>
