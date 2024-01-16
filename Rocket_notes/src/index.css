@@ -17,7 +17,8 @@ body{
     color: var(--gray-100);
     display: grid;
     grid-template-rows: 6.56rem auto;
-    grid-template-areas: "Header";
+    grid-template-areas: 
+    "Header"
     
     width: 100%;
     height: 100%;

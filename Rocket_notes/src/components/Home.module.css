@@ -4,6 +4,7 @@
     
 
     display: grid;
+    grid-area: Home;
     grid-template-columns: 250px;
     grid-template-rows: 105px 50px auto 64px;
     grid-template-areas: 

@@ -2,7 +2,6 @@ import ButtonTxt from './ButtonTxt';
 import HomeStyle from './Home.module.css';
 import Input from './Input.jsx';
 
-
 const Home = () => {
   return (
     <>

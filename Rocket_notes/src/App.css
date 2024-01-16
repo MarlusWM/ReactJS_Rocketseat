@@ -1,4 +1,5 @@
 main {
+    grid-area: ContentMain;
     grid-area: auto;
     padding: 4rem 0rem;
 }
