@@ -1,0 +1,13 @@
+.btnTxt {
+    background: none;
+    color: var(--gray-700);
+    margin-bottom: 2rem;
+
+    border: none;
+    font-size: 1rem;
+    /*float: right; não precisou*/
+}   
+
+.btnTxt:hover {
+    color: var(--orange);
+}

@@ -1,5 +1,6 @@
 
 .notePreview{
+    background: var(--background-600);
     height: 6.56rem;
     width: 100%;
     border-bottom-width: 1px solid var(--background-700);
@@ -8,6 +9,8 @@
     
     display: flex;
     align-items: center;
+
+    grid-area: header;
 }
 
 

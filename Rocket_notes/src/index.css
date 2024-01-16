@@ -1,6 +1,8 @@
 :root {
     --gray-100: #999591;
+    --background-600:#393640;
     --background-700:#312E38;
+    --background-800:#232129;
     --orange: #FF9000;
 }
 
@@ -11,6 +13,8 @@
 }
 
 body{
+    background: var(--background-700);
+    color: var(--gray-100);
     display: grid;
     grid-template-rows: 6.56rem auto;
     grid-template-areas: "Header";
