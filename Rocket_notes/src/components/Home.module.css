@@ -1,7 +1,6 @@
 .homeContainer {
     width: 100%;
-    height: 100vh;
-    
+    height: 100vh;    
 
     display: grid;
     grid-area: Home;
@@ -31,6 +30,14 @@
     grid-area: men;
     text-align: center;
 
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--background-700);
+
+}
+
+.homeMenu > li {
+    list-style: none;
 }
 
 .homeSearch {
