@@ -9,6 +9,8 @@ header {
     display: flex !important;;
     align-items: center;
     padding: 0 3rem;
+
+    background: var(--background-800);
 }
 
 a {
@@ -18,7 +20,41 @@ a {
 form {
     max-width: 25rem;
     margin: 30px auto 0;
-
-
 }
 
+.avatarContainer {
+    position: relative;
+    margin: -5.25rem auto 1rem;
+
+    width: 11.62rem;
+    height: 11.62rem;
+}
+
+.avatarContainer img {
+    width: 11.62rem;
+    height: 11.62rem;
+    border-radius: 50%;
+}
+
+.avatarContainer label {
+    border-radius: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background: var(--background-700);
+    color: var(--orange);
+    padding: 0.3rem;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+
+    cursor: pointer;
+}
+
+.avatarContainer input {
+    display: none;
+}
+
+form:nth-child(4){
+    margin: 1rem;
+}

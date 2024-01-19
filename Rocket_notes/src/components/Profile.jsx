@@ -1,5 +1,5 @@
 import ProfileStyle from './Profile.module.css';
-import { ArrowUUpLeft } from 'phosphor-react';
+import { ArrowUUpLeft, Camera } from 'phosphor-react';
 import Input from './Input.jsx';
 import Button from './Button.jsx';
 
@@ -12,6 +12,17 @@ const Profile = () => {
             </header>
 
             <form>
+              <div className={ProfileStyle.avatarContainer}>
+                <img src="https://avatars.githubusercontent.com/u/104041138?v=4" alt="" />
+
+                <label htmlFor="avatar">
+                  <Camera size={42} />
+                  <input 
+                  type="file"
+                  id='avatar' />
+                </label>
+              </div>
+
                 <Input
                 placeholder="nome"
                 type="text"

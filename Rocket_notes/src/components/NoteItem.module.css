@@ -1,0 +1,34 @@
+.noteItemContainer{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 8px;
+    border-radius: 10px;
+    padding-right: 16px;
+}
+
+input {
+    height: 56px;
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background: transparent;
+    border: 1px solid var(--gray-100);
+}
+
+.btnSum {
+    background: var(--orange);
+    color: var(--orange);
+}
+
+.btnDelete {
+    background: var(--gray-100);
+}
+
+button {
+    border: none;
+}
+
+&::placeholder {
+    color: var(--gray-100);
+}
