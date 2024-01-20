@@ -6,7 +6,6 @@
 }
 
 form {
-    padding: 0 8.5rem;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center;

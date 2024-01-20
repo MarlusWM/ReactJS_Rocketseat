@@ -1,16 +1,18 @@
 import ButtonTxt from './ButtonTxt';
+import Header from './Header.jsx';
 import HomeStyle from './Home.module.css';
 import Input from './Input.jsx';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <>
+        <Header />
         <div className={HomeStyle.homeContainer}>
-          <h1></h1>
             <div className={HomeStyle.homeBrand}>
             ROCKETNOTES
             </div>
-
+            
             <div className={HomeStyle.homeMenu}>
                 <li>
                   <ButtonTxt title={"Todos"}/>
@@ -28,11 +30,13 @@ const Home = () => {
             </div>
             
             <div>
-            <button 
-            className={HomeStyle.newNote}
-            type='button'>
-              Criar Nota
-            </button>
+              <Link to='/new'>
+                <button 
+                className={HomeStyle.newNote}
+                type='button'>
+                  Criar Nota
+                </button>
+              </Link>
             </div>
 
         </div>

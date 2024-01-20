@@ -1,6 +1,7 @@
 import SignStyle from './SignIn.module.css'
 import Input from './Input.jsx'
 import Button from './Button.jsx'
+import { Link } from 'react-router-dom'
 
 const SignIn = () => {
   return (
@@ -25,7 +26,9 @@ const SignIn = () => {
                 title='Entrar'
                 />
 
+              <Link to='/signup'>
                 <a href="#">Criar conta</a>
+              </Link>
         </form>
     </div>
     </>

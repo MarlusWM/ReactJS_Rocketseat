@@ -4,6 +4,7 @@ import Input from './Input.jsx';
 import TextArea from './TextArea.jsx';
 import NoteItem from './NoteItem.jsx';
 import Button from './Button.jsx';
+import { Link } from 'react-router-dom'
 
 const New = () => {
   return (
@@ -15,10 +16,9 @@ const New = () => {
                 <form>
                     <header>
                         <h1>Criar Nota</h1>
-                        <a href="/">Voltar</a>
                     </header>
 
-                    <Input 
+                    <Input
                     placeholder= "Título da Nota"/>
 
                     <TextArea 
@@ -28,7 +28,10 @@ const New = () => {
                     <NoteItem value={'www.site.com'}/>
                     <NoteItem isNew placeholder='Novo Link'/>
 
-                    <Button title={'Salvar'}/>
+                    <Link to='/'>
+                        <Button title={'Salvar'}/>
+                    </Link>
+                    <a href="/">Voltar</a>
                 </form>                
             </main>
         </div>

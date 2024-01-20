@@ -2,13 +2,16 @@ import ProfileStyle from './Profile.module.css';
 import { ArrowUUpLeft, Camera } from 'phosphor-react';
 import Input from './Input.jsx';
 import Button from './Button.jsx';
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
   return (
     <>
         <div className={ProfileStyle.profileContainer}>
             <header>
+              <Link to={'/'}>
                 <a href="#"><ArrowUUpLeft size={32} /></a>
+                </Link>
             </header>
 
             <form>
