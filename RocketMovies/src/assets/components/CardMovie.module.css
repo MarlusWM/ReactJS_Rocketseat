@@ -1,0 +1,44 @@
+.cardContent {
+    display: flex;
+    width: 1121px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    border-radius: 16px;
+    background: rgba(255, 133, 155, 0.05);
+
+}
+
+.cardTitle {
+    width: 217px;
+
+    color: #F4EDE8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.txtCard {
+    height: 52.846px;
+    align-self: stretch;
+
+    overflow: hidden;
+    color: #999591;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tagContent{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}

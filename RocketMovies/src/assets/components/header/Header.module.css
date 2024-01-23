@@ -1,0 +1,72 @@
+.headerContent {
+    display: flex;
+    padding: 24px 123px;
+    align-items: center;
+    gap: 64px;
+
+    border-bottom: 1px solid #3E3B47;
+    background: #1C1B1E;
+}
+
+.headerTitle {
+    height: 32px;
+    color: #FF859B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.headerSearch {
+    height: 56px;
+    display: flex;
+    padding: 19px 24px;
+    align-items: flex-start;
+    flex: 1 0 0;
+
+    border-radius: 10px;
+    background: #262529;
+}
+
+.headerAvatar {
+    display: inline-flex;
+    height: 68px;
+    align-items: center;
+    gap: 9px;
+    flex-shrink: 0;
+}
+
+.spanNameLogout {
+    display: inline-flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
+.avatarName {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #948F99;
+}
+
+.avatarLogout {
+    color: #948F99;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.imgAvatar {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 35px;
+    border: 1px solid #3E3B47;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}

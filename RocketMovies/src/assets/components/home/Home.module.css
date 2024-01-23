@@ -1,0 +1,27 @@
+.homeContent {
+    width: 1366px;
+    height: 1024px;
+
+    background: #1C1B1E;
+}
+
+.addMovie {
+    display: inline-flex;
+    height: 48px;
+    padding: 32px;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    margin: 50px 0 50px 0;
+}
+
+.homeTitle {
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 746px 0 0;
+}
+

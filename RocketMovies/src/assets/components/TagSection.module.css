@@ -1,0 +1,18 @@
+
+.btnTagSection {
+    display: flex;
+    padding: 5px 16px;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 8px;
+    background: #312E38;
+
+    color: #E5E5E5;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
