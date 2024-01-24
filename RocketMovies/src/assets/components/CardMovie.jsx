@@ -1,7 +1,7 @@
 import CardMStyle from './CardMovie.module.css';
 import TagSection from './TagSection';
-import StarCheck from '../star/starCheck.svg';
-import Star from '../star/star.svg';
+import StarCheck from '../components/images/starCheck.svg';
+import Star from '../components/images/star.svg';
 
 const CardMovie = () => {
   return (

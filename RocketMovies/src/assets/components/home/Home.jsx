@@ -14,8 +14,20 @@ const Home = () => {
             <div className={HomeStyle.addMovie}>
                 <h1 className={HomeStyle.homeTitle}>Meus Filmes</h1>
                 <Button title={'Adicionar filme'}/>
-            </div>
-            <CardMovie />
+            </div>           
+        </div>
+
+        <div className={HomeStyle.homeCard}>
+          <CardMovie />
+        </div>
+        <div className={HomeStyle.homeCard}>
+          <CardMovie />
+        </div>
+        <div className={HomeStyle.homeCard}>
+          <CardMovie />
+        </div>
+        <div className={HomeStyle.homeCard}>
+          <CardMovie />
         </div>
     </>
   )

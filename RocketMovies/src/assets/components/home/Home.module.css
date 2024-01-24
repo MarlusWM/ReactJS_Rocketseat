@@ -1,8 +1,9 @@
 .homeContent {
-    width: 1366px;
-    height: 1024px;
-
     background: #1C1B1E;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
 }
 
 .addMovie {
@@ -25,3 +26,8 @@
     margin: 0 746px 0 0;
 }
 
+.homeCard {
+    display: flex;
+    margin-bottom: 32px;
+    margin-left: auto;
+}
