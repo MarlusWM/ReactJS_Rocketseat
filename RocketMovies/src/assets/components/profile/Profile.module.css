@@ -12,13 +12,6 @@
     background: #ff859b0d;
 }
 
-.rectangle > a {
-    margin: 50px;
-    text-decoration: none;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 form {
     max-width: max-content;
     margin: 30px auto 0;
@@ -58,4 +51,9 @@ label {
 
 label > input {
     display: none;
+}
+
+.profileBtn {
+    display: flex;
+    justify-content: center;    
 }

@@ -1,0 +1,105 @@
+.createContent {
+    width: 100%;
+    height: 1024px;
+
+    background: #1C1B1E;
+}
+
+.createBox {
+    display: flex;    
+    padding: 0px 24px 16px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 50px;
+}
+
+h1 {
+    color: #F4EDE8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.formMovie {
+    display: inline-flex;
+    gap: 10px;
+}
+
+textarea {
+    resize: none;
+    display: flex;
+    width: 1090px;
+    height: 274px;
+    padding: 19px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+
+    border: none;
+    border-radius: 10px;
+    background: #262529;
+}
+
+.createBrand {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.createBrand > p {
+    color: #999591;
+}
+
+.brandBox {
+    width: 1090px;
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+
+    border-radius: 8px;
+    background: #0D0C0F;
+}
+
+.brandBox > button {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-radius: 10px;
+    background: #262529;
+    color: white;
+    width: 190px;
+}
+
+.btnEnd {
+    display: flex;
+    height: 48px;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    margin: 50px;
+    justify-content: center;
+}
+
+.btnEnd > button {
+    display: inline-flex;
+    height: 48px;
+    padding: 32px;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+
+    border-radius: 8px;
+    background: #262529;
+    color: #FF859B;
+}

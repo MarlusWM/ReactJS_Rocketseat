@@ -1,6 +1,6 @@
 import InputStyle from './Input.module.css';
 
-const Input = ({ type, placeholder, name }) => {
+const Input = ({ type, placeholder }) => {
   return (
     <>
         <div className={InputStyle.inputContent}>

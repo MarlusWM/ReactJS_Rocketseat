@@ -1,5 +1,5 @@
 import ButtonStyle from './Button.module.css';
-import { Plus } from 'phosphor-react';
+
 
 const Button = ({ title }) => {
   return (
@@ -8,7 +8,7 @@ const Button = ({ title }) => {
             <button 
                 className={ButtonStyle.btnContent} 
                 type="submit"> 
-                <Plus size={32} /> {title}
+                {title}
             </button>
         </div>
     </>

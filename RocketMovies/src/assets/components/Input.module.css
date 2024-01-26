@@ -1,11 +1,11 @@
 .inputContent {
-    width: 340px;
+    width: 540px;
     margin: 0 0 10px 0;
     flex-shrink: 0;
 }
 
 .inputBox {
-    width: 340px;
+    width: 540px;
     height: 56px;
     flex-shrink: 0;
     padding: 18px;

@@ -2,14 +2,15 @@ import ProfileStyle from './Profile.module.css';
 import {Camera} from 'phosphor-react';
 import Input from '../Input.jsx';
 import Button from '../Button.jsx'
+import ButtonBack from '../ButtonBack.jsx';
 
 const Profile = () => {
   return (
     <>
         <div className={ProfileStyle.profileContent}>
             <header>
-                <div className={ProfileStyle.rectangle}>
-                    <a href="/">Voltar</a>
+                <div>
+                    <ButtonBack />
                 </div>
             </header>
 
@@ -27,7 +28,9 @@ const Profile = () => {
                     <br/>
                     <Input placeholder={'Senha atual'} type={'password'}/>
                     <Input placeholder={'Senha nova'} type={'password'}/>
-                    <Button title={'Salvar'}/>
+                    <div className={ProfileStyle.profileBtn}>
+                        <Button title={'Salvar'}/>
+                    </div>
                 </form>
                 
             </div>

@@ -1,0 +1,12 @@
+.btnBack {
+    margin: 50px;
+}
+
+.btnBack > a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #FF859B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    align-items:center ;
+}

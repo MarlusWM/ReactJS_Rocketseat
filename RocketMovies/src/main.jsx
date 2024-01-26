@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Profile from './assets/components/profile/Profile'
+import CreateMovie from './assets/components/create_movie/CreateMovie'
+
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Profile />
+    <CreateMovie />
   </React.StrictMode>,
 )

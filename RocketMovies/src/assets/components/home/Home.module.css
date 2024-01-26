@@ -26,6 +26,13 @@
     margin: 0 746px 0 0;
 }
 
+.homeBtn {
+    display: inline-flex;
+    align-items: center;
+
+    color: #FF859B;
+}
+
 .homeCard {
     display: flex;
     margin-bottom: 32px;
