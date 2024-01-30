@@ -70,10 +70,12 @@ textarea {
 }
 
 .brandBox > button {
-    display: flex;
+    display: inline-flex;
     padding: 16px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
 
     border-radius: 10px;
     background: #262529;

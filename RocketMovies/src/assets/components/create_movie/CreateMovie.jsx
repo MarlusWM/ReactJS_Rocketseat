@@ -4,6 +4,7 @@ import ButtonBack from '../ButtonBack.jsx';
 import Input from '../Input.jsx';
 import { X } from 'phosphor-react'
 import Button from '../Button.jsx';
+import TagSection from '../TagSection.jsx';
 
 
 const CreateMovie = () => {
@@ -30,13 +31,10 @@ const CreateMovie = () => {
             <div className={CreateStyle.createBrand}>
                 <p>Marcadores</p>
                 <div className={CreateStyle.brandBox}>
-                    <button type="button">
-                        React <X size={20} />
-                    </button>
+                    <TagSection title={'React'}/>                        
 
-                    <button type="button">
-                        React <X size={20} />
-                    </button>
+                    <TagSection title={'Novo Marcador'}/>
+                    <TagSection title={'Arrumar'}/>
                 </div>                
             </div>
 

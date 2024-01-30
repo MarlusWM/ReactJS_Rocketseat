@@ -1,0 +1,83 @@
+.sigContent {
+    width: 803px;
+    height: 1024px;
+    flex-shrink: 0;
+
+    text-align: justify;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+form {
+    margin: 235px  0 0 134px;
+}
+
+.title {
+    width: 803px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #FF859B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-bottom: 5px;
+}
+
+span {
+    color: #CAC4CF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.formLog {
+    width: 803px;
+    height: 343px;
+    flex-shrink: 0;
+}
+
+h2 {
+    color:  #F4EDE8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-bottom: 30px;
+}
+
+.btnEnter {
+    width: 340px;
+}
+
+.newAccount {
+    width: 540px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #FF859B;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+img {
+    
+    height: 100vh;
+    align-self: baseline;
+    overflow: hidden;
+    background-size: cover;
+}

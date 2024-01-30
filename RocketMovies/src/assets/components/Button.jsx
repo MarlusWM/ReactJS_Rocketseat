@@ -4,9 +4,9 @@ import ButtonStyle from './Button.module.css';
 const Button = ({ title }) => {
   return (
     <>
-        <div>
+        <div className={ButtonStyle.btnContent}>
             <button 
-                className={ButtonStyle.btnContent} 
+                className={ButtonStyle.btnBox} 
                 type="submit"> 
                 {title}
             </button>
