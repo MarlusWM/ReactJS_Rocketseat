@@ -1,13 +1,14 @@
 import TagStyle from './TagSection.module.css';
-import { X } from 'phosphor-react'
 
-const TagSection = ( { title }) => {
+
+const TagSection = ( { title, icon }) => {
   return (
     <>
         <div>
             <button
             className={TagStyle.btnTagSection}
-            type="button">{title} <X size={20} />
+            type="button"
+            >{title} {icon}
             </button>         
         </div>
     </>

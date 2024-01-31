@@ -2,7 +2,7 @@ import CreateStyle from './CreateMovie.module.css';
 import Header from '../header/Header.jsx';
 import ButtonBack from '../ButtonBack.jsx';
 import Input from '../Input.jsx';
-import { X } from 'phosphor-react'
+import { X, Plus } from 'phosphor-react'
 import Button from '../Button.jsx';
 import TagSection from '../TagSection.jsx';
 
@@ -31,10 +31,10 @@ const CreateMovie = () => {
             <div className={CreateStyle.createBrand}>
                 <p>Marcadores</p>
                 <div className={CreateStyle.brandBox}>
-                    <TagSection title={'React'}/>                        
+                    <TagSection title={'React'} icon={<X/>}/>                        
 
-                    <TagSection title={'Novo Marcador'}/>
-                    <TagSection title={'Arrumar'}/>
+                    <TagSection title={'Novo Marcador'} icon={<Plus/>}/>
+                    <TagSection title={'Arrumar layout'}/>
                 </div>                
             </div>
 
