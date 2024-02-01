@@ -3,6 +3,7 @@ import Input from '../Input.jsx';
 import Button from '../Button.jsx'
 import Background from '../backgroundLogin/background.jpg';
 import { ArrowLeft } from 'phosphor-react';
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   return (
@@ -23,10 +24,12 @@ const Signup = () => {
                   </div>              
               </div>              
                 <div className={SignupStyle.returnLogin}>
-                  <a href="/"><ArrowLeft size={20} /> Voltar para o login</a>
+                  <Link to='/'>
+                  <a className={SignupStyle.link} href="#"><ArrowLeft size={20} /> Voltar para o login</a>
+                  </Link>
                 </div>
             </form>
-            <img src={Background} alt="" />
+            <img className={SignupStyle.bg} src={Background} alt="" />
         </div>        
     </>
   )

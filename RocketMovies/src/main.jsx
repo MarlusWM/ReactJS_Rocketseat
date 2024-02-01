@@ -1,13 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Signup from './assets/components/signup/Signup.jsx';
-
-
+import Routes from './assets/components/routes'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Signup />
+      <Routes />
   </React.StrictMode>,
 )

@@ -7,11 +7,12 @@ import ButtonBack from '../ButtonBack.jsx';
 const Profile = () => {
   return (
     <>
+        <div>
+            <ButtonBack />
+        </div>
         <div className={ProfileStyle.profileContent}>
             <header>
-                <div>
-                    <ButtonBack />
-                </div>
+                
             </header>
 
                 <form>

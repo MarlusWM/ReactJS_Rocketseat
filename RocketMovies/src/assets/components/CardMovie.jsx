@@ -7,14 +7,17 @@ const CardMovie = () => {
   return (
     <>
         <div className={CardMStyle.cardContent}>
-            <h2 className={CardMStyle.cardTitle}>Interstellar</h2>
-                <div>
-                    <img src={StarCheck}/>
-                    <img src={StarCheck}/>
-                    <img src={StarCheck}/>
-                    <img src={StarCheck}/>
-                    <img src={Star}/>
-                </div>
+            <h2 className={CardMStyle.cardTitle}>
+                Interstellar
+            </h2>
+            <div>
+                <img src={StarCheck}/>
+                <img src={StarCheck}/>
+                <img src={StarCheck}/>
+                <img src={StarCheck}/>
+                <img src={Star}/>
+            </div>
+                
                 <p className={CardMStyle.txtCard}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero commodi nisi officia ea odio velit debitis! Asperiores inventore ut architecto. Sunt mollitia asperiores ad voluptatem totam distinctio odit a reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reiciendis autem iste incidunt et! Porro ipsa aliquam quod? Aliquam, officiis consequuntur asperiores quae beatae quisquam eaque corporis repellat est. Laboriosam?
                 </p>

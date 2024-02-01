@@ -90,12 +90,12 @@ textarea {
     gap: 40px;
     align-self: stretch;
     margin: 50px;
-    justify-content: center;
+    
 }
 
 .btnEnd > button {
     display: inline-flex;
-    height: 48px;
+    height: 75px;
     padding: 32px;
     align-items: center;
     gap: 8px;

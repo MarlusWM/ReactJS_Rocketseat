@@ -14,7 +14,7 @@
 
 .cardTitle {
     width: 217px;
-
+    margin-bottom: -10px;
     color: #F4EDE8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;

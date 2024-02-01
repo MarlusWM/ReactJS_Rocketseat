@@ -1,14 +1,14 @@
 import ButtonStyle from './Button.module.css';
 
 
-const Button = ({ title }) => {
+const Button = ({ title, icon }) => {
   return (
     <>
         <div className={ButtonStyle.btnContent}>
             <button 
                 className={ButtonStyle.btnBox} 
                 type="submit"> 
-                {title}
+                {icon} {title}
             </button>
         </div>
     </>

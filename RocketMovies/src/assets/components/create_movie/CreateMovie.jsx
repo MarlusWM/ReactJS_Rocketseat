@@ -5,6 +5,7 @@ import Input from '../Input.jsx';
 import { X, Plus } from 'phosphor-react'
 import Button from '../Button.jsx';
 import TagSection from '../TagSection.jsx';
+import { Link } from 'react-router-dom'
 
 
 const CreateMovie = () => {
@@ -15,7 +16,9 @@ const CreateMovie = () => {
         </header>
 
         <div className={CreateStyle.createContent}>
-            <ButtonBack />
+            <Link to='/home'>
+                <ButtonBack />
+            </Link>
             <div className={CreateStyle.createBox}>
                 <h1>Novo Filme</h1>
                 <div className={CreateStyle.formMovie}>
@@ -34,7 +37,6 @@ const CreateMovie = () => {
                     <TagSection title={'React'} icon={<X/>}/>                        
 
                     <TagSection title={'Novo Marcador'} icon={<Plus/>}/>
-                    <TagSection title={'Arrumar layout'}/>
                 </div>                
             </div>
 

@@ -3,6 +3,7 @@ import Header from '../header/Header.jsx';
 import { ArrowLeft, X } from 'phosphor-react';
 import Star from '../../star/star.svg';
 import TagSection from '../TagSection.jsx';
+import { Link } from 'react-router-dom';
 
 const MoviePreview = () => {
   return (
@@ -12,10 +13,11 @@ const MoviePreview = () => {
         </header>
 
         <div className={PreviewStyle.previewContent}>
-            
-            <a href="/" className={PreviewStyle.back}>
+            <Link to='/home'>
+            <a href="#" className={PreviewStyle.back}>
                 <ArrowLeft size={20}/> Voltar
             </a>
+            </Link>
 
             <div className={PreviewStyle.title}>
                 <h1>Interestellar</h1>

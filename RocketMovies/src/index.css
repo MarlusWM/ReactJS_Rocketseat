@@ -9,5 +9,17 @@ body {
     width: 100%;
     height: 100%;
     background: #1C1B1E;
-    overflow: hidden;
+}
+
+::-webkit-scrollbar-track {
+    background: #1C1B1E;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #FF859B;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF859B;
 }
