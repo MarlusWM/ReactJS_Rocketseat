@@ -1,7 +1,7 @@
 import PreviewStyle from './MoviePreview.module.css';
 import Header from '../header/Header.jsx';
 import { ArrowLeft, X } from 'phosphor-react';
-import Star from '../../star/star.svg';
+import Star from '../images/star/star.svg';
 import TagSection from '../TagSection.jsx';
 import { Link } from 'react-router-dom';
 

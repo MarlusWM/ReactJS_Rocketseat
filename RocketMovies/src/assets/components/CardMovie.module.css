@@ -1,6 +1,6 @@
 .cardContent {
     display: flex;
-    width: 1121px;
+    width: 80vw;
     padding: 32px;
     margin: auto;
     flex-direction: column;
@@ -42,4 +42,10 @@
     display: flex;
     align-items: flex-start;
     gap: 8px;
+}
+
+@media (max-width: 700px) {
+    .tagContent {
+        display: block;
+    }
 }

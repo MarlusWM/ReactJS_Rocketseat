@@ -1,6 +1,6 @@
 .btnContent {
     display: flex;
-    width: 540px;
+    width: 100%;
     justify-content: center;
 }
 

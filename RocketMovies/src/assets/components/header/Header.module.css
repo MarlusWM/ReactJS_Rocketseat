@@ -1,8 +1,10 @@
 .headerContent {
-    display: flex;
-    padding: 24px 123px;
-    align-items: center;
+    width: 100vw;
+    padding: 24px 100px;
+    display: flex;    
+    
     gap: 64px;
+    margin: auto;
 
     border-bottom: 1px solid #3E3B47;
     background: #1C1B1E;
@@ -20,9 +22,8 @@
 
 .headerSearch {
     height: 56px;
-    display: flex;
+    
     padding: 19px 24px;
-    align-items: flex-start;
     flex: 1 0 0;
 
     border-radius: 10px;
@@ -39,8 +40,8 @@
 
 .spanNameLogout {
     display: inline-flex;
-flex-direction: column;
-align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .avatarName {
@@ -69,4 +70,22 @@ align-items: flex-end;
     border-radius: 35px;
     border: 1px solid #3E3B47;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+@media (max-width: 800px) {
+    .headerContent {
+        width: 80vw;
+        height: auto;
+        margin: auto;
+
+        flex-shrink: 0;
+        
+        display: block;
+    }
+    .headerTitle {
+        margin-bottom: 50px;
+    }
+    .headerAvatar {
+        margin-top: 50px;
+    }
 }

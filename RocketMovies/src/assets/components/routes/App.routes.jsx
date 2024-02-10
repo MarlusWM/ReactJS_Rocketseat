@@ -9,6 +9,7 @@ import Signup from '../signup/Signup'
 
 
 const AppRoutes = () => {
+
   return (
     <Routes>
         <Route path='/createMovie' element={<CreatMovie />}/>

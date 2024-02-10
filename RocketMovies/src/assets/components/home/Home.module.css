@@ -1,16 +1,15 @@
 .homeContent {
+    width: 100vw;
     background: #1C1B1E;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    
+    display: block;
+    text-align: center;
 }
 
 .addMovie {
+    width: 70vw;
     display: inline-flex;
-    height: 48px;
     padding: 32px;
-    align-items: center;
+    justify-content: space-between;
     gap: 8px;
     flex-shrink: 0;
     margin: 50px 0 50px 0;
@@ -23,13 +22,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0 746px 0 0;
 }
 
 .homeBtn {
-    display: inline-flex;
-    align-items: center;
-
     color: #FF859B;
 }
 
@@ -38,4 +33,16 @@
     justify-content: center;
     margin-bottom: 32px;
     margin-left: auto;
+}
+
+@media (max-width: 1000px) {
+    .addMovie {
+        width: 50%;
+        display: block;
+        margin: auto;
+        padding: 20px;
+    }
+    .homeTitle {
+        margin-bottom: 50px;
+    }
 }
