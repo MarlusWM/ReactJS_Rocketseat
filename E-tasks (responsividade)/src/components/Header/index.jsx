@@ -4,11 +4,11 @@ import { Button } from "../Button";
 
 import { Container, Menu } from "./styles";
 
-export function Header() {
+export function Header({ handleMenuOpen }) {
   return (
     <Container>
-      <Menu>
-        <List />
+      <Menu >
+        <List onClick={handleMenuOpen}/>
       </Menu>
       <h1>Tarefas</h1>
       <Button icon={Plus} title="Nova tarefa" />
