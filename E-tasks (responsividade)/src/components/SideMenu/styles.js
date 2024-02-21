@@ -15,10 +15,11 @@ export const Container = styled.aside`
     position: absolute;
     z-index: 1;
     
-    display: none;
+    transform: translatex(-100%);
+    transition: transform 0.3s ease-in;
 
     &[data-menuIsOpen='true'] {
-      display: block;
+      transform: translatex(0);
     }
 
   }
