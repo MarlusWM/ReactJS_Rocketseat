@@ -44,6 +44,10 @@ function handleSignup(evento) {
     }
   }
 
+  if (loading) {
+    return <h1>CRIANDO CONTA...</h1>
+  }
+
   return (
     <>
         <div className={SignupStyle.sigContent}>

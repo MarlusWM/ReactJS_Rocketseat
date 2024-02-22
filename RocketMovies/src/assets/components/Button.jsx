@@ -5,7 +5,7 @@ const Button = ({ title, icon, onClick }) => {
   return (
     <>
         <div className={ButtonStyle.btnContent}>
-            <button 
+            <button
                 className={ButtonStyle.btnBox} 
                 type="submit"
                 onClick={onClick}> 

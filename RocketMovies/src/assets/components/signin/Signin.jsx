@@ -10,6 +10,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from '../../../services/firebaseConfig.jsx';
 
 
+
 const Signin = () => {
 
     const [email, setEmail] = useState('');
@@ -21,10 +22,23 @@ const Signin = () => {
       error,
     ] = useSignInWithEmailAndPassword(auth);
 
-function handleSignin(evento) {
-  evento.preventDefault();
+function handleSignin(event) {
+  event.preventDefault();
   signInWithEmailAndPassword(email, password);
   console.log('disparado');
+}
+
+if (user) {
+  return console.log(user);
+}
+
+if(loading) {
+  return <h1>carregando...</h1>
+}
+
+if (error) {
+  alert('ERRO AO LOGAR')
+  return <h1>ERROR</h1>
 }
 
 
@@ -41,22 +55,23 @@ function handleSignin(evento) {
               <div className={SigninStyle.formLog}>
                   <h2>Faça seu login</h2>
                   <Input 
-                  type={'text'}
+                  type={'email'}
                   placeholder={'Email'}
                   value={email}
-                  onChange={(evento)=> {setEmail(evento.target.value)}}
+                  onChange={(event)=> {setEmail(event.target.value)}}
                   />
 
                   <Input 
                   type={'password'}
                   placeholder={'Senha'}
                   value={password}
-                  onChange={(evento)=> {setPassword(evento.target.value)}}
+                  onChange={(event)=> {setPassword(event.target.value)}}
                   />
 
                   <div className={SigninStyle.btnEnter}>
                     <Link to='/home'>
                       <Button 
+                      type={'submit'}
                       onClick={handleSignin}
                       title={'Entrar'}/>
                     </Link>
